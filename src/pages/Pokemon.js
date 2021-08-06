@@ -77,11 +77,11 @@ export default function PokemonPage() {
                                 <Row>
                                     <Card>
                                         <div className="title">Weight</div>
-                                        <div>{pokemon.weight}</div>
+                                        <div>{(pokemon.weight/1000).toFixed(2)}kg</div>
                                     </Card>
                                     <Card>
                                         <div className="title">Height</div>
-                                        <div>{pokemon.height}</div>
+                                        <div>{(pokemon.height/100).toFixed(2)}m</div>
                                     </Card>
                                     <Card>
                                         <div className="title">Base XP</div>
