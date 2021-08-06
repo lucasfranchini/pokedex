@@ -11,7 +11,7 @@ export function PokemonsProvider({ children }) {
     const [pokemons, setPokemons] = useState(null);
 
     useEffect(() => {
-        updatePokemons();
+        updatePokemons();// eslint-disable-next-line
     }, [token?.token]);
 
     function updatePokemons() {
